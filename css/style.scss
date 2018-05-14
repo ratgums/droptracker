@@ -1,0 +1,164 @@
+@font-face{
+  font-family: 'osrs';
+  src: url('osrs.ttf') format('truetype');
+}
+
+p{
+  font-family:'PT Sans', sans-serif;
+  font-weight:bold;
+  font-size: 14;
+  color:black;
+}
+
+.buttonpad{
+  background-color: #e5d7a2;
+  width: 230px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 15px;
+  padding-left: 40px;
+  border: 3px solid black;
+}
+
+.droplist{
+  background-color: #e5d7a2;
+  width: 230px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 15px;
+  padding-left: 40px;
+  border: 3px solid black;
+}
+
+body {
+  background-image: url("http://backgroundcheckall.com/wp-content/uploads/2017/12/osrs-background-2-300x200.jpg");
+}
+
+
+button{
+  padding: 20px;
+  border: none;
+}
+
+#ely{
+  background: url('https://vignette.wikia.nocookie.net/2007scape/images/3/39/Elysian_sigil.png/revision/latest?cb=20141016203633') no-repeat;
+}
+#arcane{
+  background: url('https://vignette.wikia.nocookie.net/2007scape/images/3/31/Arcane_sigil.png/revision/latest?cb=20141016224037') no-repeat;
+}
+#spectral{
+  background: url('https://vignette.wikia.nocookie.net/2007scape/images/d/da/Spectral_sigil.png/revision/latest?cb=20141016224114') no-repeat;
+}
+#shield{
+  background: url('https://vignette.wikia.nocookie.net/2007scape/images/e/e4/Spirit_shield.png/revision/latest?cb=20141016194022') no-repeat;
+}
+#elixer{
+  background: url('https://vignette.wikia.nocookie.net/2007scape/images/f/f7/Holy_elixir.png/revision/latest?cb=20141016225518') no-repeat;
+}
+
+
+#ess{
+  background: url('https://vignette.wikia.nocookie.net/2007scape/images/a/a8/Pure_essence.png/revision/latest?cb=20131229203316') no-repeat;
+}
+#law{
+  background: url('https://vignette.wikia.nocookie.net/2007scape/images/f/f6/Law_rune.png/revision/latest?cb=20151107053232') no-repeat;
+}
+#cosmic{
+  background: url('https://vignette.wikia.nocookie.net/2007scape/images/a/ae/Cosmic_rune.png/revision/latest?cb=20151107053229') no-repeat;
+}
+#death{
+  background: url('https://vignette.wikia.nocookie.net/2007scape/images/5/55/Death_rune.png/revision/latest?cb=20151107053230') no-repeat;
+}
+#soul{
+  background: url('https://vignette.wikia.nocookie.net/2007scape/images/9/9b/Soul_rune.png/revision/latest?cb=20151107053235') no-repeat;
+}
+
+
+
+#cball{
+  background: url('https://vignette.wikia.nocookie.net/2007scape/images/f/fa/Cannonball.png/revision/latest?cb=20130225220330') no-repeat;
+}
+#air{
+  background: url('https://vignette.wikia.nocookie.net/2007scape/images/2/28/Mystic_air_staff.png/revision/latest?cb=20160123055901') no-repeat;
+}
+#water{
+  background: url('https://vignette.wikia.nocookie.net/2007scape/images/1/17/Mystic_water_staff.png/revision/latest?cb=20160123055802') no-repeat;
+}
+#earth{
+  background: url('https://vignette.wikia.nocookie.net/2007scape/images/1/14/Mystic_earth_staff.png/revision/latest?cb=20160123055901') no-repeat;
+}
+#fire{
+  background: url('https://vignette.wikia.nocookie.net/2007scape/images/3/3f/Mystic_fire_staff.png/revision/latest?cb=20160123055901') no-repeat;
+}
+
+
+#aarrows{
+  background: url('https://vignette.wikia.nocookie.net/2007scape/images/6/63/Adamant_arrow_5.png/revision/latest?cb=20130225005924') no-repeat;
+}
+#rbolts{
+  background: url('https://vignette.wikia.nocookie.net/2007scape/images/f/f3/Runite_bolts_5.png/revision/latest?cb=20170622132809') no-repeat;
+}
+#obolts{
+  background: url('https://vignette.wikia.nocookie.net/2007scape/images/3/38/Onyx_bolts_5.png/revision/latest?cb=20170622230313') no-repeat;
+}
+#top{
+  background: url('https://vignette.wikia.nocookie.net/2007scape/images/3/35/Mystic_robe_top_%28blue%29.png/revision/latest?cb=20131117215636') no-repeat;
+}
+#bottom{
+  background: url('https://vignette.wikia.nocookie.net/2007scape/images/1/19/Mystic_robe_bottom_%28blue%29.png/revision/latest?cb=20131117220351') no-repeat;
+}
+
+
+#aore{
+  background: url('https://vignette.wikia.nocookie.net/2007scape/images/a/a1/Adamantite_ore.png/revision/latest?cb=20141007033511') no-repeat;
+}
+#rore{
+  background: url('https://vignette.wikia.nocookie.net/2007scape/images/a/a0/Runite_ore.png/revision/latest?cb=20141007033522') no-repeat;
+}
+#abar{
+  background: url('https://vignette.wikia.nocookie.net/2007scape/images/e/eb/Adamantite_bar.png/revision/latest?cb=20130225010536') no-repeat;
+}
+#tplank{
+  background: url('https://vignette.wikia.nocookie.net/2007scape/images/9/99/Teak_plank.png/revision/latest?cb=20130329025007') no-repeat;
+}
+#dhides{
+  background: url('https://vignette.wikia.nocookie.net/2007scape/images/3/32/Green_dragonhide.png/revision/latest?cb=20130506055846') no-repeat;
+}
+
+
+#mahog{
+  background: url('https://vignette.wikia.nocookie.net/2007scape/images/1/1c/Mahogany_logs.png/revision/latest?cb=20160808200942') no-repeat;
+}
+#magic{
+  background: url('https://vignette.wikia.nocookie.net/2007scape/images/2/20/Magic_logs.png/revision/latest?cb=20160726192403') no-repeat;
+}
+#rdt{
+  background: url('https://vignette.wikia.nocookie.net/2007scape/images/9/93/Rare_drop_table.png/revision/latest?cb=20160601200353') no-repeat;
+}
+#shark{
+  background: url('https://vignette.wikia.nocookie.net/2007scape/images/1/1f/Raw_shark.png/revision/latest?cb=20130821170244') no-repeat;
+}
+#tuna{
+  background: url('https://vignette.wikia.nocookie.net/2007scape/images/7/7f/Tuna_potato.png/revision/latest?cb=20140308012758') no-repeat;
+}
+
+
+#horns{
+  background: url('https://vignette.wikia.nocookie.net/2007scape/images/8/86/Desert_goat_horn.png/revision/latest?cb=20140707233744') no-repeat;
+}
+#berries{
+  background: url('https://vignette.wikia.nocookie.net/2007scape/images/5/56/White_berries.png/revision/latest?cb=20131119235650') no-repeat;
+}
+#wseed{
+  background: url('https://vignette.wikia.nocookie.net/2007scape/images/c/c0/Watermelon_seed_5.png/revision/latest?cb=20140518212847') no-repeat;
+}
+#rseed{
+  background: url('https://vignette.wikia.nocookie.net/2007scape/images/6/6b/Herb_seed_5.png/revision/latest?cb=20160913124350') no-repeat;
+}
+#anti{
+  background: url('https://vignette.wikia.nocookie.net/2007scape/images/4/41/Antidote%2B%2B%284%29.png/revision/latest?cb=20141228065044') no-repeat;
+}
