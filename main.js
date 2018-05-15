@@ -4,13 +4,20 @@ var ely = {
   drops: 0,
   amount: 1,
   add: function(){
-    this.drops = this.drops + 1;
-  }
+    this.drops = this.drops + 1; this.list();
+  },
   list: function(){
-    if (drops == 0){
-      return "";
-    }else{
-      return this.name + " x " + (this.drops * this.amount);
+    if (this.drops > 0){
+      document.getElementById(this.id).innerHTML = this.name + " x " + (this.drops * this.amount) + "<button class=\"remove\" onclick=\"ely.del()\">delete 1</button>";
+    }
+  },
+  del: function(){
+    if(this.drops > 1){
+      this.drops = this.drops - 1; this.list();
+    }
+    else {
+      this.drops = 0;
+      document.getElementById(this.id).innerHTML = "";
     }
   }
 };
@@ -20,13 +27,20 @@ var arcane = {
   drops: 0,
   amount: 1,
   add: function(){
-    this.drops = this.drops + 1;
-  }
+    this.drops = this.drops + 1; this.list();
+  },
   list: function(){
-    if (drops == 0){
-      return "";
-    }else{
-      return this.name + " x " + (this.drops * this.amount);
+    if (this.drops > 0){
+      document.getElementById(this.id).innerHTML = this.name + " x " + (this.drops * this.amount) + "<button class=\"remove\" onclick=\"arcane.del()\">delete 1</button>";
+    }
+  },
+  del: function(){
+    if(this.drops > 1){
+      this.drops = this.drops - 1; this.list();
+    }
+    else {
+      this.drops = 0;
+      document.getElementById(this.id).innerHTML = "";
     }
   }
 };
@@ -36,13 +50,20 @@ var spectral = {
   drops: 0,
   amount: 1,
   add: function(){
-    this.drops = this.drops + 1;
-  }
+    this.drops = this.drops + 1; this.list();
+  },
   list: function(){
-    if (drops == 0){
-      return "";
-    }else{
-      return this.name + " x " + (this.drops * this.amount);
+    if (this.drops > 0){
+      document.getElementById(this.id).innerHTML = this.name + " x " + (this.drops * this.amount) + "<button class=\"remove\" onclick=\"spectral.del()\">delete 1</button>";
+    }
+  },
+  del: function(){
+    if(this.drops > 1){
+      this.drops = this.drops - 1; this.list();
+    }
+    else {
+      this.drops = 0;
+      document.getElementById(this.id).innerHTML = "";
     }
   }
 };
@@ -52,13 +73,22 @@ var shield = {
   drops: 0,
   amount: 1,
   add: function(){
-    this.drops = this.drops + 1;
-  }
+    this.drops = this.drops + 1; this.list();
+  },
   list: function(){
-    if (drops == 0){
-      return "";
-    }else{
-      return this.name + " x " + (this.drops * this.amount);
+    if (this.drops > 0){
+
+
+      document.getElementById(this.id).innerHTML = this.name + " x " + (this.drops * this.amount) + "<button class=\"remove\" onclick=\"shield.del()\">delete 1</button>";
+    }
+  },
+  del: function(){
+    if(this.drops > 1){
+      this.drops = this.drops - 1; this.list();
+    }
+    else {
+      this.drops = 0;
+      document.getElementById(this.id).innerHTML = "";
     }
   }
 };
@@ -68,13 +98,22 @@ var elixer = {
   drops: 0,
   amount: 1,
   add: function(){
-    this.drops = this.drops + 1;
-  }
+    this.drops = this.drops + 1; this.list();
+  },
   list: function(){
-    if (drops == 0){
-      return "";
-    }else{
-      return this.name + " x " + (this.drops * this.amount);
+    if (this.drops > 0){
+
+
+      document.getElementById(this.id).innerHTML = this.name + " x " + (this.drops * this.amount) + "<button class=\"remove\" onclick=\"elixer.del()\">delete 1</button>";
+    }
+  },
+  del: function(){
+    if(this.drops > 1){
+      this.drops = this.drops - 1; this.list();
+    }
+    else {
+      this.drops = 0;
+      document.getElementById(this.id).innerHTML = "";
     }
   }
 };
@@ -85,13 +124,22 @@ var ess = {
   drops: 0,
   amount: 2500,
   add: function(){
-    this.drops = this.drops + 1;
-  }
+    this.drops = this.drops + 1; this.list();
+  },
   list: function(){
-    if (drops == 0){
-      return "";
-    }else{
-      return this.name + " x " + (this.drops * this.amount);
+    if (this.drops > 0){
+
+
+      document.getElementById(this.id).innerHTML = this.name + " x " + (this.drops * this.amount) + "<button class=\"remove\" onclick=\"ess.del()\">delete 1</button>";
+    }
+  },
+  del: function(){
+    if(this.drops > 1){
+      this.drops = this.drops - 1; this.list();
+    }
+    else {
+      this.drops = 0;
+      document.getElementById(this.id).innerHTML = "";
     }
   }
 };
@@ -101,13 +149,22 @@ var law = {
   drops: 0,
   amount: 250,
   add: function(){
-    this.drops = this.drops + 1;
-  }
+    this.drops = this.drops + 1; this.list();
+  },
   list: function(){
-    if (drops == 0){
-      return "";
-    }else{
-      return this.name + " x " + (this.drops * this.amount);
+    if (this.drops > 0){
+
+
+      document.getElementById(this.id).innerHTML = this.name + " x " + (this.drops * this.amount) + "<button class=\"remove\" onclick=\"law.del()\">delete 1</button>";
+    }
+  },
+  del: function(){
+    if(this.drops > 1){
+      this.drops = this.drops - 1; this.list();
+    }
+    else {
+      this.drops = 0;
+      document.getElementById(this.id).innerHTML = "";
     }
   }
 };
@@ -117,13 +174,22 @@ var cosmic = {
   drops: 0,
   amount: 500,
   add: function(){
-    this.drops = this.drops + 1;
-  }
+    this.drops = this.drops + 1; this.list();
+  },
   list: function(){
-    if (drops == 0){
-      return "";
-    }else{
-      return this.name + " x " + (this.drops * this.amount);
+    if (this.drops > 0){
+
+
+      document.getElementById(this.id).innerHTML = this.name + " x " + (this.drops * this.amount) + "<button class=\"remove\" onclick=\"cosmic.del()\">delete 1</button>";
+    }
+  },
+  del: function(){
+    if(this.drops > 1){
+      this.drops = this.drops - 1; this.list();
+    }
+    else {
+      this.drops = 0;
+      document.getElementById(this.id).innerHTML = "";
     }
   }
 };
@@ -133,13 +199,22 @@ var death = {
   drops: 0,
   amount: 300,
   add: function(){
-    this.drops = this.drops + 1;
-  }
+    this.drops = this.drops + 1; this.list();
+  },
   list: function(){
-    if (drops == 0){
-      return "";
-    }else{
-      return this.name + " x " + (this.drops * this.amount);
+    if (this.drops > 0){
+
+
+      document.getElementById(this.id).innerHTML = this.name + " x " + (this.drops * this.amount) + "<button class=\"remove\" onclick=\"death.del()\">delete 1</button>";
+    }
+  },
+  del: function(){
+    if(this.drops > 1){
+      this.drops = this.drops - 1; this.list();
+    }
+    else {
+      this.drops = 0;
+      document.getElementById(this.id).innerHTML = "";
     }
   }
 };
@@ -149,13 +224,22 @@ var soul = {
   drops: 0,
   amount: 250,
   add: function(){
-    this.drops = this.drops + 1;
-  }
+    this.drops = this.drops + 1; this.list();
+  },
   list: function(){
-    if (drops == 0){
-      return "";
-    }else{
-      return this.name + " x " + (this.drops * this.amount);
+    if (this.drops > 0){
+
+
+      document.getElementById(this.id).innerHTML = this.name + " x " + (this.drops * this.amount) + "<button class=\"remove\" onclick=\"soul.del()\">delete 1</button>";
+    }
+  },
+  del: function(){
+    if(this.drops > 1){
+      this.drops = this.drops - 1; this.list();
+    }
+    else {
+      this.drops = 0;
+      document.getElementById(this.id).innerHTML = "";
     }
   }
 };
@@ -166,13 +250,22 @@ var cball = {
   drops: 0,
   amount: 2000,
   add: function(){
-    this.drops = this.drops + 1;
-  }
+    this.drops = this.drops + 1; this.list();
+  },
   list: function(){
-    if (drops == 0){
-      return "";
-    }else{
-      return this.name + " x " + (this.drops * this.amount);
+    if (this.drops > 0){
+
+
+      document.getElementById(this.id).innerHTML = this.name + " x " + (this.drops * this.amount) + "<button class=\"remove\" onclick=\"cball.del()\">delete 1</button>";
+    }
+  },
+  del: function(){
+    if(this.drops > 1){
+      this.drops = this.drops - 1; this.list();
+    }
+    else {
+      this.drops = 0;
+      document.getElementById(this.id).innerHTML = "";
     }
   }
 };
@@ -182,13 +275,22 @@ var air = {
   drops: 0,
   amount: 1,
   add: function(){
-    this.drops = this.drops + 1;
-  }
+    this.drops = this.drops + 1; this.list();
+  },
   list: function(){
-    if (drops == 0){
-      return "";
-    }else{
-      return this.name + " x " + (this.drops * this.amount);
+    if (this.drops > 0){
+
+
+      document.getElementById(this.id).innerHTML = this.name + " x " + (this.drops * this.amount) + "<button class=\"remove\" onclick=\"air.del()\">delete 1</button>";
+    }
+  },
+  del: function(){
+    if(this.drops > 1){
+      this.drops = this.drops - 1; this.list();
+    }
+    else {
+      this.drops = 0;
+      document.getElementById(this.id).innerHTML = "";
     }
   }
 };
@@ -198,13 +300,22 @@ var water = {
   drops: 0,
   amount: 1,
   add: function(){
-    this.drops = this.drops + 1;
-  }
+    this.drops = this.drops + 1; this.list();
+  },
   list: function(){
-    if (drops == 0){
-      return "";
-    }else{
-      return this.name + " x " + (this.drops * this.amount);
+    if (this.drops > 0){
+
+
+      document.getElementById(this.id).innerHTML = this.name + " x " + (this.drops * this.amount) + "<button class=\"remove\" onclick=\"water.del()\">delete 1</button>";
+    }
+  },
+  del: function(){
+    if(this.drops > 1){
+      this.drops = this.drops - 1; this.list();
+    }
+    else {
+      this.drops = 0;
+      document.getElementById(this.id).innerHTML = "";
     }
   }
 };
@@ -214,13 +325,22 @@ var earth = {
   drops: 0,
   amount: 1,
   add: function(){
-    this.drops = this.drops + 1;
-  }
+    this.drops = this.drops + 1; this.list();
+  },
   list: function(){
-    if (drops == 0){
-      return "";
-    }else{
-      return this.name + " x " + (this.drops * this.amount);
+    if (this.drops > 0){
+
+
+      document.getElementById(this.id).innerHTML = this.name + " x " + (this.drops * this.amount) + "<button class=\"remove\" onclick=\"earth.del()\">delete 1</button>";
+    }
+  },
+  del: function(){
+    if(this.drops > 1){
+      this.drops = this.drops - 1; this.list();
+    }
+    else {
+      this.drops = 0;
+      document.getElementById(this.id).innerHTML = "";
     }
   }
 };
@@ -230,13 +350,22 @@ var fire = {
   drops: 0,
   amount: 1,
   add: function(){
-    this.drops = this.drops + 1;
-  }
+    this.drops = this.drops + 1; this.list();
+  },
   list: function(){
-    if (drops == 0){
-      return "";
-    }else{
-      return this.name + " x " + (this.drops * this.amount);
+    if (this.drops > 0){
+
+
+      document.getElementById(this.id).innerHTML = this.name + " x " + (this.drops * this.amount) + "<button class=\"remove\" onclick=\"fire.del()\">delete 1</button>";
+    }
+  },
+  del: function(){
+    if(this.drops > 1){
+      this.drops = this.drops - 1; this.list();
+    }
+    else {
+      this.drops = 0;
+      document.getElementById(this.id).innerHTML = "";
     }
   }
 };
@@ -247,13 +376,22 @@ var aarrows = {
   drops: 0,
   amount: 750,
   add: function(){
-    this.drops = this.drops + 1;
-  }
+    this.drops = this.drops + 1; this.list();
+  },
   list: function(){
-    if (drops == 0){
-      return "";
-    }else{
-      return this.name + " x " + (this.drops * this.amount);
+    if (this.drops > 0){
+
+
+      document.getElementById(this.id).innerHTML = this.name + " x " + (this.drops * this.amount) + "<button class=\"remove\" onclick=\"aarrows.del()\">delete 1</button>";
+    }
+  },
+  del: function(){
+    if(this.drops > 1){
+      this.drops = this.drops - 1; this.list();
+    }
+    else {
+      this.drops = 0;
+      document.getElementById(this.id).innerHTML = "";
     }
   }
 };
@@ -263,13 +401,22 @@ var rbolts = {
   drops: 0,
   amount: 250,
   add: function(){
-    this.drops = this.drops + 1;
-  }
+    this.drops = this.drops + 1; this.list();
+  },
   list: function(){
-    if (drops == 0){
-      return "";
-    }else{
-      return this.name + " x " + (this.drops * this.amount);
+    if (this.drops > 0){
+
+
+      document.getElementById(this.id).innerHTML = this.name + " x " + (this.drops * this.amount) + "<button class=\"remove\" onclick=\"rbolts.del()\">delete 1</button>";
+    }
+  },
+  del: function(){
+    if(this.drops > 1){
+      this.drops = this.drops - 1; this.list();
+    }
+    else {
+      this.drops = 0;
+      document.getElementById(this.id).innerHTML = "";
     }
   }
 };
@@ -279,29 +426,47 @@ var obolts = {
   drops: 0,
   amount: 175,
   add: function(){
-    this.drops = this.drops + 1;
-  }
+    this.drops = this.drops + 1; this.list();
+  },
   list: function(){
-    if (drops == 0){
-      return "";
-    }else{
-      return this.name + " x " + (this.drops * this.amount);
+    if (this.drops > 0){
+
+
+      document.getElementById(this.id).innerHTML = this.name + " x " + (this.drops * this.amount) + "<button class=\"remove\" onclick=\"obolts.del()\">delete 1</button>";
+    }
+  },
+  del: function(){
+    if(this.drops > 1){
+      this.drops = this.drops - 1; this.list();
+    }
+    else {
+      this.drops = 0;
+      document.getElementById(this.id).innerHTML = "";
     }
   }
 };
-var top = {
+var mystictop = {
   name : "Mystic Robe Top",
   id: 19,
   drops: 0,
   amount: 1,
   add: function(){
-    this.drops = this.drops + 1;
-  }
+    this.drops = this.drops + 1; this.list();
+  },
   list: function(){
-    if (drops == 0){
-      return "";
-    }else{
-      return this.name + " x " + (this.drops * this.amount);
+    if (this.drops > 0){
+
+
+      document.getElementById(this.id).innerHTML = this.name + " x " + (this.drops * this.amount) + "<button class=\"remove\" onclick=\"mystictop.del()\">delete 1</button>";
+    }
+  },
+  del: function(){
+    if(this.drops > 1){
+      this.drops = this.drops - 1; this.list();
+    }
+    else {
+      this.drops = 0;
+      document.getElementById(this.id).innerHTML = "";
     }
   }
 };
@@ -311,262 +476,400 @@ var bottom = {
   drops: 0,
   amount: 1,
   add: function(){
-    this.drops = this.drops + 1;
-  }
+    this.drops = this.drops + 1; this.list();
+  },
   list: function(){
-    if (drops == 0){
-      return "";
-    }else{
-      return this.name + " x " + (this.drops * this.amount);
+    if (this.drops > 0){
+
+
+      document.getElementById(this.id).innerHTML = this.name + " x " + (this.drops * this.amount) + "<button class=\"remove\" onclick=\"bottom.del()\">delete 1</button>";
+    }
+  },
+  del: function(){
+    if(this.drops > 1){
+      this.drops = this.drops - 1; this.list();
+    }
+    else {
+      this.drops = 0;
+      document.getElementById(this.id).innerHTML = "";
     }
   }
 };
 
 var aaore = {
   name : "Adamantite Ore",
-  id: 15,
+  id: 21,
   drops: 0,
   amount: 125,
   add: function(){
-    this.drops = this.drops + 1;
-  }
+    this.drops = this.drops + 1; this.list();
+  },
   list: function(){
-    if (drops == 0){
-      return "";
-    }else{
-      return this.name + " x " + (this.drops * this.amount);
+    if (this.drops > 0){
+
+
+      document.getElementById(this.id).innerHTML = this.name + " x " + (this.drops * this.amount) + "<button class=\"remove\" onclick=\"aaore.del()\">delete 1</button>";
+    }
+  },
+  del: function(){
+    if(this.drops > 1){
+      this.drops = this.drops - 1; this.list();
+    }
+    else {
+      this.drops = 0;
+      document.getElementById(this.id).innerHTML = "";
     }
   }
 };
 var rore = {
   name : "Runite Ore",
-  id: 15,
+  id: 22,
   drops: 0,
   amount: 20,
   add: function(){
-    this.drops = this.drops + 1;
-  }
+    this.drops = this.drops + 1; this.list();
+  },
   list: function(){
-    if (drops == 0){
-      return "";
-    }else{
-      return this.name + " x " + (this.drops * this.amount);
+    if (this.drops > 0){
+
+
+      document.getElementById(this.id).innerHTML = this.name + " x " + (this.drops * this.amount) + "<button class=\"remove\" onclick=\"rore.del()\">delete 1</button>";
+    }
+  },
+  del: function(){
+    if(this.drops > 1){
+      this.drops = this.drops - 1; this.list();
+    }
+    else {
+      this.drops = 0;
+      document.getElementById(this.id).innerHTML = "";
     }
   }
 };
 var abar = {
   name : "Adamantite Bar",
-  id: 15,
+  id: 23,
   drops: 0,
   amount: 35,
   add: function(){
-    this.drops = this.drops + 1;
-  }
+    this.drops = this.drops + 1; this.list();
+  },
   list: function(){
-    if (drops == 0){
-      return "";
-    }else{
-      return this.name + " x " + (this.drops * this.amount);
+    if (this.drops > 0){
+
+
+      document.getElementById(this.id).innerHTML = this.name + " x " + (this.drops * this.amount) + "<button class=\"remove\" onclick=\"abar.del()\">delete 1</button>";
+    }
+  },
+  del: function(){
+    if(this.drops > 1){
+      this.drops = this.drops - 1; this.list();
+    }
+    else {
+      this.drops = 0;
+      document.getElementById(this.id).innerHTML = "";
     }
   }
 };
 var tplank = {
   name : "Teak Planks",
-  id: 15,
+  id: 24,
   drops: 0,
   amount: 100,
   add: function(){
-    this.drops = this.drops + 1;
-  }
+    this.drops = this.drops + 1; this.list();
+  },
   list: function(){
-    if (drops == 0){
-      return "";
-    }else{
-      return this.name + " x " + (this.drops * this.amount);
+    if (this.drops > 0){
+
+
+      document.getElementById(this.id).innerHTML = this.name + " x " + (this.drops * this.amount) + "<button class=\"remove\" onclick=\"tplank.del()\">delete 1</button>";
+    }
+  },
+  del: function(){
+    if(this.drops > 1){
+      this.drops = this.drops - 1; this.list();
+    }
+    else {
+      this.drops = 0;
+      document.getElementById(this.id).innerHTML = "";
     }
   }
 };
 var dhides = {
   name : "Green Dragonhides",
-  id: 15,
+  id: 25,
   drops: 0,
   amount: 100,
   add: function(){
-    this.drops = this.drops + 1;
-  }
+    this.drops = this.drops + 1; this.list();
+  },
   list: function(){
-    if (drops == 0){
-      return "";
-    }else{
-      return this.name + " x " + (this.drops * this.amount);
+    if (this.drops > 0){
+
+
+      document.getElementById(this.id).innerHTML = this.name + " x " + (this.drops * this.amount) + "<button class=\"remove\" onclick=\"dhides.del()\">delete 1</button>";
+    }
+  },
+  del: function(){
+    if(this.drops > 1){
+      this.drops = this.drops - 1; this.list();
+    }
+    else {
+      this.drops = 0;
+      document.getElementById(this.id).innerHTML = "";
     }
   }
 };
 
 var mahog = {
   name : "Mahogany Logs",
-  id: 15,
+  id: 26,
   drops: 0,
   amount: 150,
   add: function(){
-    this.drops = this.drops + 1;
-  }
+    this.drops = this.drops + 1; this.list();
+  },
   list: function(){
-    if (drops == 0){
-      return "";
-    }else{
-      return this.name + " x " + (this.drops * this.amount);
+    if (this.drops > 0){
+
+
+      document.getElementById(this.id).innerHTML = this.name + " x " + (this.drops * this.amount) + "<button class=\"remove\" onclick=\"mahog.del()\">delete 1</button>";
+    }
+  },
+  del: function(){
+    if(this.drops > 1){
+      this.drops = this.drops - 1; this.list();
+    }
+    else {
+      this.drops = 0;
+      document.getElementById(this.id).innerHTML = "";
     }
   }
 };
 var magic = {
   name : "Magic Logs",
-  id: 15,
+  id: 27,
   drops: 0,
   amount: 75,
   add: function(){
-    this.drops = this.drops + 1;
-  }
+    this.drops = this.drops + 1; this.list();
+  },
   list: function(){
-    if (drops == 0){
-      return "";
-    }else{
-      return this.name + " x " + (this.drops * this.amount);
+    if (this.drops > 0){
+
+
+      document.getElementById(this.id).innerHTML = this.name + " x " + (this.drops * this.amount) + "<button class=\"remove\" onclick=\"magic.del()\">delete 1</button>";
+    }
+  },
+  del: function(){
+    if(this.drops > 1){
+      this.drops = this.drops - 1; this.list();
+    }
+    else {
+      this.drops = 0;
+      document.getElementById(this.id).innerHTML = "";
     }
   }
 };
 var rdt = {
   name : "Uncuts drop",
-  id: 15,
+  id: 28,
   drops: 0,
   amount: 1,
   add: function(){
-    this.drops = this.drops + 1;
-  }
+    this.drops = this.drops + 1; this.list();
+  },
   list: function(){
-    if (drops == 0){
-      return "";
-    }else{
-      return this.name + " x " + (this.drops * this.amount);
+    if (this.drops > 0){
+
+
+      document.getElementById(this.id).innerHTML = this.name + " x " + (this.drops * this.amount) + "<button class=\"remove\" onclick=\"rdt.del()\">delete 1</button>";
+    }
+  },
+  del: function(){
+    if(this.drops > 1){
+      this.drops = this.drops - 1; this.list();
+    }
+    else {
+      this.drops = 0;
+      document.getElementById(this.id).innerHTML = "";
     }
   }
 };
 var shark = {
   name : "Raw Sharks",
-  id: 15,
+  id: 29,
   drops: 0,
   amount: 70,
   add: function(){
-    this.drops = this.drops + 1;
-  }
+    this.drops = this.drops + 1; this.list();
+  },
   list: function(){
-    if (drops == 0){
-      return "";
-    }else{
-      return this.name + " x " + (this.drops * this.amount);
+    if (this.drops > 0){
+
+
+      document.getElementById(this.id).innerHTML = this.name + " x " + (this.drops * this.amount) + "<button class=\"remove\" onclick=\"shark.del()\">delete 1</button>";
+    }
+  },
+  del: function(){
+    if(this.drops > 1){
+      this.drops = this.drops - 1; this.list();
+    }
+    else {
+      this.drops = 0;
+      document.getElementById(this.id).innerHTML = "";
     }
   }
 };
 var tuna = {
   name : "Tuna Potatoes",
-  id: 15,
+  id: 30,
   drops: 0,
   amount: 30,
   add: function(){
-    this.drops = this.drops + 1;
-  }
+    this.drops = this.drops + 1; this.list();
+  },
   list: function(){
-    if (drops == 0){
-      return "";
-    }else{
-      return this.name + " x " + (this.drops * this.amount);
+    if (this.drops > 0){
+
+
+      document.getElementById(this.id).innerHTML = this.name + " x " + (this.drops * this.amount) + "<button class=\"remove\" onclick=\"tuna.del()\">delete 1</button>";
+    }
+  },
+  del: function(){
+    if(this.drops > 1){
+      this.drops = this.drops - 1; this.list();
+    }
+    else {
+      this.drops = 0;
+      document.getElementById(this.id).innerHTML = "";
     }
   }
 };
 
 var horns = {
   name : "Desert Goat Horns",
-  id: 15,
+  id: 31,
   drops: 0,
   amount: 120,
   add: function(){
-    this.drops = this.drops + 1;
-  }
+    this.drops = this.drops + 1; this.list();
+  },
   list: function(){
-    if (drops == 0){
-      return "";
-    }else{
-      return this.name + " x " + (this.drops * this.amount);
+    if (this.drops > 0){
+
+
+      document.getElementById(this.id).innerHTML = this.name + " x " + (this.drops * this.amount) + "<button class=\"remove\" onclick=\"horns.del()\">delete 1</button>";
+    }
+  },
+  del: function(){
+    if(this.drops > 1){
+      this.drops = this.drops - 1; this.list();
+    }
+    else {
+      this.drops = 0;
+      document.getElementById(this.id).innerHTML = "";
     }
   }
 };
 var berries = {
   name : "White Berries",
-  id: 15,
+  id: 32,
   drops: 0,
   amount: 120,
   add: function(){
-    this.drops = this.drops + 1;
-  }
+    this.drops = this.drops + 1; this.list();
+  },
   list: function(){
-    if (drops == 0){
-      return "";
-    }else{
-      return this.name + " x " + (this.drops * this.amount);
+    if (this.drops > 0){
+
+
+      document.getElementById(this.id).innerHTML = this.name + " x " + (this.drops * this.amount) + "<button class=\"remove\" onclick=\"berries.del()\">delete 1</button>";
+    }
+  },
+  del: function(){
+    if(this.drops > 1){
+      this.drops = this.drops - 1; this.list();
+    }
+    else {
+      this.drops = 0;
+      document.getElementById(this.id).innerHTML = "";
     }
   }
 };
-var Watermelon Seed = {
+var wseeds = {
   name : "Watermelon Seeds",
-  id: 15,
+  id: 33,
   drops: 0,
   amount: 24,
   add: function(){
-    this.drops = this.drops + 1;
-  }
+    this.drops = this.drops + 1; this.list();
+  },
   list: function(){
-    if (drops == 0){
-      return "";
-    }else{
-      return this.name + " x " + (this.drops * this.amount);
+    if (this.drops > 0){
+
+
+      document.getElementById(this.id).innerHTML = this.name + " x " + (this.drops * this.amount) + "<button class=\"remove\" onclick=\"wseeds.del()\">delete 1</button>";
+    }
+  },
+  del: function(){
+    if(this.drops > 1){
+      this.drops = this.drops - 1; this.list();
+    }
+    else {
+      this.drops = 0;
+      document.getElementById(this.id).innerHTML = "";
     }
   }
 };
 var rseeds = {
   name : "Ranarr Seeds",
-  id: 15,
+  id: 34,
   drops: 0,
   amount: 10,
   add: function(){
-    this.drops = this.drops + 1;
-  }
+    this.drops = this.drops + 1; this.list();
+  },
   list: function(){
-    if (drops == 0){
-      return "";
-    }else{
-      return this.name + " x " + (this.drops * this.amount);
+    if (this.drops > 0){
+
+
+      document.getElementById(this.id).innerHTML = this.name + " x " + (this.drops * this.amount) + "<button class=\"remove\" onclick=\"rseeds.del()\">delete 1</button>";
+    }
+  },
+  del: function(){
+    if(this.drops > 1){
+      this.drops = this.drops - 1; this.list();
+    }
+    else {
+      this.drops = 0;
+      document.getElementById(this.id).innerHTML = "";
     }
   }
 };
 var anti = {
   name : "Antidote++(4)",
-  id: 15,
+  id: 35,
   drops: 0,
-  amount: ,
+  amount: 10,
   add: function(){
-    this.drops = this.drops + 1;
-  }
+    this.drops = this.drops + 1; this.list();
+  },
   list: function(){
-    if (drops == 0){
-      return "";
-    }else{
-      return this.name + " x " + (this.drops * this.amount);
+    if (this.drops > 0){
+
+
+      document.getElementById(this.id).innerHTML = this.name + " x " + (this.drops * this.amount) + "<button class=\"remove\" onclick=\"anti.del()\">delete 1</button>";
+    }
+  },
+  del: function(){
+    if(this.drops > 1){
+      this.drops = this.drops - 1; this.list();
+    }
+    else {
+      this.drops = 0;
+      document.getElementById(this.id).innerHTML = "";
     }
   }
 };
-
-var text = 'some text';
-
-function darken(){
-  document.getElementById("ely").style.backgroundColor = "black";
-}

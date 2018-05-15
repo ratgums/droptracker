@@ -1,13 +1,21 @@
-@font-face{
-  font-family: 'osrs';
-  src: url('osrs.ttf') format('truetype');
-}
+
 
 p{
   font-family:'PT Sans', sans-serif;
   font-weight:bold;
   font-size: 14;
   color:black;
+}
+
+.desc{
+  background-color: #e5d7a2;
+  width: 285px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align:center;
+  border: 3px solid black;
 }
 
 .buttonpad{
@@ -39,9 +47,48 @@ body {
 }
 
 
-button{
+.items{
   padding: 20px;
   border: none;
+}
+
+.remove{
+  padding: 3px;
+  border: none;
+  background-color: white;
+  font-family:'PT Sans', sans-serif;
+  font-size:8px;
+  float: right;
+}
+
+
+footer{
+  font-size: 12px;
+  font-family:'PT Sans', sans-serif;
+  color:#e5d7a2;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+a{
+  color:#e5d7a2;
+}
+
+#core{
+  position:fixed;
+  bottom:-20px;
+  left:0;
+  width:20%;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+#core2{
+  position:fixed;
+  bottom:-20px;
+  right:0;
+  width:20%;
+
 }
 
 #ely{
